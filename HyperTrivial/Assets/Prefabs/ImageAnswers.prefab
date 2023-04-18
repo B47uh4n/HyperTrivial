@@ -807,7 +807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 430090344796095026}
   m_Layer: 0
-  m_Name: Answers
+  m_Name: ImageAnswers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
