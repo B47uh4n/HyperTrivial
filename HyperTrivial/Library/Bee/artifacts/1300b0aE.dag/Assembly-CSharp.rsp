@@ -118,7 +118,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"Assets/Tools/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -324,7 +324,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"C:/Users/90545/Desktop/HyperTrivial/HyperTrivial/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/90545/Desktop/HyperTrivial/HyperTrivial/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
--r:"Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Boxophobic.SkyboxCubemapExtended.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Boxophobic.Utils.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Boxophobic.Utils.Scripts.ref.dll"
@@ -353,12 +352,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/PathCreator/Examples/Scripts/GeneratePathExample.cs"
-"Assets/PathCreator/Examples/Scripts/PathFollower.cs"
-"Assets/PathCreator/Examples/Scripts/PathPlacer.cs"
-"Assets/PathCreator/Examples/Scripts/PathSceneTool.cs"
-"Assets/PathCreator/Examples/Scripts/PathSpawner.cs"
-"Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs"
+-analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/DOTween.dll"
+-analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Camera/CameraHolder.cs"
 "Assets/Scripts/MainMenu/CharacterSelection.cs"
@@ -368,6 +363,20 @@
 "Assets/Scripts/Menu/SceneManagement.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/GeneratePathExample.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/PathFollower.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/PathPlacer.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/PathSceneTool.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/PathSpawner.cs"
+"Assets/Tools/PathCreator/Examples/Scripts/RoadMeshCreator.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+"Assets/Tools/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
 -langversion:9.0
 
 /deterministic

@@ -340,6 +340,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/DOTween.dll"
+-analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/Editor/Analytics/CoverageAnalytics.cs"
 "Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/Editor/Analytics/CoverageAnalyticsEnums.cs"
 "Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/Editor/Analytics/CoverageAnalyticsEvent.cs"
