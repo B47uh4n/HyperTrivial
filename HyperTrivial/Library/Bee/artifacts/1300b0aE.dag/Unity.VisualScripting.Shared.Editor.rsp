@@ -350,8 +350,6 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/Tools/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Shared/EmptyGraphWindow.cs"
 -langversion:9.0
 
