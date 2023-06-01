@@ -14,7 +14,7 @@ public class CharacterSelection : MonoBehaviour
         characters[selectedCharacter].SetActive(false);
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
         characters[selectedCharacter].SetActive(true);
-        characters[selectedCharacter].transform.DOMoveX(-3f,2f).From();
+        characters[selectedCharacter].transform.DOMoveX(14f,2f).From();
     }
 
     public void PreviousCharacter()
@@ -26,7 +26,7 @@ public class CharacterSelection : MonoBehaviour
             selectedCharacter += characters.Length;
         }
         characters[selectedCharacter].SetActive(true);
-        characters[selectedCharacter].transform.DOMoveX(-3f, 2f).From();
+        characters[selectedCharacter].transform.DOMoveX(14f, 2f).From();
     }
 
     public void StartGame()
