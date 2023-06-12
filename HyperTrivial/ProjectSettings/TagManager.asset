@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FalseAnswer
   - NextScene
+  - Coin
   layers:
   - Default
   - TransparentFX

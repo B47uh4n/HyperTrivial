@@ -355,6 +355,7 @@
 "Assets/AsteroidMovement.cs"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Camera/CameraHolder.cs"
+"Assets/Scripts/CoinCollect.cs"
 "Assets/Scripts/MainMenu/CharacterSelection.cs"
 "Assets/Scripts/MainMenu/LoadCharacter.cs"
 "Assets/Scripts/MainMenu/MainMenuCam.cs"
