@@ -20,11 +20,15 @@ public class AsteroidMovement : MonoBehaviour
             Asteroid.DORotate(new Vector3(360.0f, 360.0f, 0.0f), 5.0f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Restart).SetRelative().SetEase(Ease.Linear);
             Asteroid.DOMove(new Vector3(5.0f, 1.0f, 5.0f), 4.0f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
 
+          
+        }
+
+        if (Solar != null)
+        {
             Solar.DORotate(new Vector3(360.0f, 360.0f, 0.0f), 5.0f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Restart).SetRelative().SetEase(Ease.Linear);
             Solar.DOMove(new Vector3(5.0f, 1.0f, 13.0f), 8.0f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
         }
-     
-     
-     }
+
+    }
      
 }
