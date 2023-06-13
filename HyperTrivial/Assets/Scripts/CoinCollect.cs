@@ -10,14 +10,23 @@ public class CoinCollect : MonoBehaviour
     public TextMeshProUGUI coinText;
 
 
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == "Coin")
+        if (other.transform.tag == "Coin")
         {
+            coin = PlayerPrefs.GetInt("coinAmount", 0);
             coin++;
-            coinText.text = "Coin: " + coin.ToString();
+            PlayerPrefs.SetInt("coinAmount", coin);
+            coinText.text = "Coin: " + PlayerPrefs.GetInt("coinAmount").ToString();
             Debug.Log(coin);
             Destroy(other.gameObject);
         }
     }
+
+    private void Start()
+    {
+        coinText.text = "Coin: " + PlayerPrefs.GetInt("coinAmount").ToString();
+    }
+
 }
