@@ -4479,7 +4479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 423a8da6890b5b04abc5fa7d7b1da499, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.632868
+      value: -9.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 423a8da6890b5b04abc5fa7d7b1da499, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22993,6 +22993,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 955166767}
+    - target: {fileID: 8627800523990848919, guid: d4522cef894244e4f823374c529f5103, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 8627800524144192608, guid: d4522cef894244e4f823374c529f5103, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
