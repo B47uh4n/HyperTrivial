@@ -8,6 +8,7 @@ public class CharacterSelection : MonoBehaviour
 {
     public GameObject[] characters;
     public GameObject KratosPriceInfo;
+    public GameObject ElyPriceInfo;
     public int selectedCharacter = 0;
 
     public void NextCharacter()
@@ -20,9 +21,15 @@ public class CharacterSelection : MonoBehaviour
         {
             KratosPriceInfo.SetActive(true);
         }
-        else
+        else if (selectedCharacter == 2)
         {
             KratosPriceInfo.SetActive(false);
+            ElyPriceInfo.SetActive(true);
+        }
+        else if(selectedCharacter == 0)
+        {
+            KratosPriceInfo.SetActive(false);
+            ElyPriceInfo.SetActive(false);
         }
 
         characters[selectedCharacter].transform.DOMoveX(14f,2f).From();
@@ -38,13 +45,20 @@ public class CharacterSelection : MonoBehaviour
         }
         characters[selectedCharacter].SetActive(true);
 
-        if (selectedCharacter == 1)
+        if(selectedCharacter == 2)
+        {
+            KratosPriceInfo.SetActive(false);
+            ElyPriceInfo.SetActive(true);
+        }
+        else if (selectedCharacter == 1)
         {
             KratosPriceInfo.SetActive(true);
+            ElyPriceInfo.SetActive(false);
         }
         else
         {
             KratosPriceInfo.SetActive(false);
+            ElyPriceInfo.SetActive(false);
         }
 
         characters[selectedCharacter].transform.DOMoveX(14f, 2f).From();
@@ -65,7 +79,15 @@ public class CharacterSelection : MonoBehaviour
                 SceneManager.LoadScene(1, LoadSceneMode.Single);
             }
         }
-        
+        else if (selectedCharacter == 2)
+        {
+            if (PlayerPrefs.GetInt("coinAmount", 0) >= 300)
+            {
+                PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
+                SceneManager.LoadScene(1, LoadSceneMode.Single);
+            }
+        }
+
     }
 
     public void ReturnTheGame()
@@ -83,8 +105,17 @@ public class CharacterSelection : MonoBehaviour
                 SceneManager.LoadScene(PlayerPrefs.GetInt("currentSceneIndex"), LoadSceneMode.Single);
             }
         }
-        
-        
+        else if (selectedCharacter == 2)
+        {
+            if (PlayerPrefs.GetInt("coinAmount", 0) >= 300)
+            {
+                PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
+                SceneManager.LoadScene(1, LoadSceneMode.Single);
+            }
+        }
+
+
+
     }
 
 }
