@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 4.unity
     guid: d9d29037365d7a44792c4080b4591522
+  - enabled: 1
+    path: Assets/Scenes/CharSelMenu.unity
+    guid: 6d9b9122d41efad4da8ab333ea61ddd1
   m_configObjects: {}

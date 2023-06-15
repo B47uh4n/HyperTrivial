@@ -35,4 +35,11 @@ public class CharacterSelection : MonoBehaviour
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
+    public void ReturnTheGame()
+    {
+        PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("currentSceneIndex"), LoadSceneMode.Single);
+        
+    }
+
 }

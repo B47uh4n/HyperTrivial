@@ -24,7 +24,7 @@ public class GameOverMenu : MonoBehaviour
     {
         //coincollect = GameObject.Find("PlayerHolder").GetComponent<CoinCollect>();
         //coincollect.coin = coincollect.firstCoinAmount;
-        if (SceneManagement.finishlineControl == false)
+        /*if (SceneManagement.finishlineControl == false)
         {
             coinCheck = 0;
             PlayerPrefs.SetInt("coinAmount", coinCheck);
@@ -33,7 +33,10 @@ public class GameOverMenu : MonoBehaviour
         {
             coinCheck = PlayerPrefs.GetInt("coinBackup");
             PlayerPrefs.SetInt("coinAmount", coinCheck);
-        }
+        }*/
+        coinCheck = PlayerPrefs.GetInt("coinBackup", 0);
+        PlayerPrefs.SetInt("coinAmount", coinCheck);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
