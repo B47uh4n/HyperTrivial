@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195900734221112545, guid: fd9b027781518c94dade508b11400837, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: TrueAnswer
       objectReference: {fileID: 0}
     - target: {fileID: 195900735212181489, guid: fd9b027781518c94dade508b11400837, type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195900735212181494, guid: fd9b027781518c94dade508b11400837, type: 3}
       propertyPath: m_Name
-      value: AnswersL
+      value: AnswersL Variant
       objectReference: {fileID: 0}
     - target: {fileID: 195900735360627973, guid: fd9b027781518c94dade508b11400837, type: 3}
       propertyPath: m_Name
@@ -79,5 +79,6 @@ PrefabInstance:
       propertyPath: m_text
       value: KALEM
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 943884199199518424, guid: fd9b027781518c94dade508b11400837, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd9b027781518c94dade508b11400837, type: 3}

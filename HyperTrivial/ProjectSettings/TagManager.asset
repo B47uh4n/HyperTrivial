@@ -8,6 +8,7 @@ TagManager:
   - NextScene
   - Coin
   - Dancing
+  - TrueAnswer
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class CoinCollect : MonoBehaviour
 
     public int coin = 0;
     public TextMeshProUGUI coinText;
-
+    [SerializeField] AudioSource Coinsound;
 
 
     private void OnTriggerEnter(Collider other)
@@ -20,6 +20,7 @@ public class CoinCollect : MonoBehaviour
             PlayerPrefs.SetInt("coinAmount", coin);
             coinText.text = "Coin: " + PlayerPrefs.GetInt("coinAmount").ToString();
             Debug.Log(coin);
+            Coinsound.Play();
             Destroy(other.gameObject);
         }
     }

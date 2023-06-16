@@ -11,12 +11,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform Cam;
     [SerializeField] GameObject Confetti;
     [SerializeField] GameObject FinishPanel;
-
+    [SerializeField] AudioSource TrueVoice;
+    [SerializeField] AudioSource FalseVoice;
+    [SerializeField] AudioSource victory;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("FalseAnswer"))
-        {
+        { 
+            FalseVoice.Play();
             GameOverMenu.GameOver();
+           
+        }
+        else if (other.CompareTag("TrueAnswer"))
+        {
+            TrueVoice.Play();
         }
         else if (other.CompareTag("NextScene"))
         {
@@ -24,7 +32,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.CompareTag("Dancing"))
         {
-            if(PlayerPrefs.GetInt("selectedCharacter") == 1 || PlayerPrefs.GetInt("selectedCharacter") == 2)
+            victory.Play();
+            if (PlayerPrefs.GetInt("selectedCharacter") == 1 || PlayerPrefs.GetInt("selectedCharacter") == 2)
             {
                 anim = GetComponentInChildren<Animator>();
                 anim.Play("dance");
