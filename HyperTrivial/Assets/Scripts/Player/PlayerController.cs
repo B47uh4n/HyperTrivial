@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         else if (other.CompareTag("Dancing"))
         {
             victory.Play();
-            if (PlayerPrefs.GetInt("selectedCharacter") == 1 || PlayerPrefs.GetInt("selectedCharacter") == 2)
+            if (PlayerPrefs.GetInt("selectedCharacter") == 0 || PlayerPrefs.GetInt("selectedCharacter") == 1 || PlayerPrefs.GetInt("selectedCharacter") == 2)
             {
                 anim = GetComponentInChildren<Animator>();
                 anim.Play("dance");

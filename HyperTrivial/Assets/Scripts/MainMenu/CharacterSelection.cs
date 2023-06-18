@@ -110,7 +110,7 @@ public class CharacterSelection : MonoBehaviour
             if (PlayerPrefs.GetInt("coinAmount", 0) >= 300)
             {
                 PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
-                SceneManager.LoadScene(1, LoadSceneMode.Single);
+                SceneManager.LoadScene(PlayerPrefs.GetInt("currentSceneIndex"), LoadSceneMode.Single);
             }
         }
 

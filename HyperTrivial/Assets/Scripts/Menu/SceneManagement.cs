@@ -60,4 +60,8 @@ public class SceneManagement : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("CharSelMenu");
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

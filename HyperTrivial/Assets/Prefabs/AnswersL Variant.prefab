@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: TrueAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 195900734942290417, guid: fd9b027781518c94dade508b11400837, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 195900735212181489, guid: fd9b027781518c94dade508b11400837, type: 3}
       propertyPath: m_RootOrder
       value: 0
